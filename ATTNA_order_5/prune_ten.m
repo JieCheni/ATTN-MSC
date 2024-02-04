@@ -49,43 +49,8 @@ for i = 1:9
     ratio_change(i+1) = (change(index2(i+1)) - change(index2(i)))/change(index2(1));
 end
 ratio_change(1) = 0;
-%% solution 1
-% [~,a]=max(ratio_change(1:7));
-% for i = 1:10
-%     if i <= a-1
-%         rank(index2(i)) = 1;
-%     end
-% end
 
-%% solution 2
-% for i = 1:10      
-%       if ratio_change(i)< ratio_change (i+1) && ratio_change (i+1) > ratio_change(i+2)
-%          for jj = 1: i
-%              rank(index2(jj)) = 1;
-%          end
-%          break;
-%       end
-% end
-% [~,index1] = sort(rse,'ascend');
-% for i = 1:9
-%     if rse(index(i+1)) ~= 1
-%         ratio_rse(i+1) = (rse(index1(i+1)) - rse(index1(i)))/rse(index1(i));
-%     end
-% end
-% ratio_rse(1) = 0;
 
-%% solution 3
-
-% rate = 0.4;
-% len = length(index);
-% for n = 1:(len-rate*len)
-%     rank(index(n)) = 2;
-% end
-% for n = (len-rate*len)+1:len
-%     rank(index(n)) = 1;
-% end
-
-%% solution 4
 if min(change)<ATTNA_para.prune_theshold
     [~,idx] = min(change);
     rank(idx) = 1;
