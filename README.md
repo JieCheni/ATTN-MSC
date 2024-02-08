@@ -3,7 +3,7 @@ Adaptively Topological Tensor Network for Multi-view Subspace Clustering
 
 
 
-You can run the files starting with 'test_···.m" to see the clustering results of our ATTN-MSC.
+You can run the files starting with 'test" to see the clustering results of our ATTN-MSC.
 
 
 
