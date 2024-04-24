@@ -1,5 +1,5 @@
 # ATTN-MSC
-Adaptively Topological Tensor Network for Multi-view Subspace Clustering
+Adaptively Topological Tensor Network for Multi-view Subspace Clustering  (TKDE 2024)
 
 
 
